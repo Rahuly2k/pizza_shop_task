@@ -99,7 +99,7 @@ shopModule.controller('shopController',['$scope','PizzaService',function($scope,
 
             // reset all array and checkbox
 
-            $('input:checkbox').removeAttr('checked');
+            $('input:checkbox').prop( "checked", false );
 
             $scope.selected_order = {ordered_pizza:[]};
 
