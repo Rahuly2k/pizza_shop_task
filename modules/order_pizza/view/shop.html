@@ -1,0 +1,79 @@
+<app-menu></app-menu>
+
+<div class="container">
+
+    <div class="shop_title">
+        <div class="row">
+            <div class="col-md-6"><h3>Order Please</h3></div>
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-5">
+                        <span style="float: right;">Total : &#8377; {{total}}</span>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="dropdown" style="float: right;">
+                            <button class="dropbtn">Order summary</button>
+                            <div class="dropdown-content">
+                            <a ng-repeat="p in selected_order.ordered_pizza">{{p.pizza_name}} - &#8377; {{p.price}}</a>
+                            </div>            
+                        </div> 
+                    </div>                            
+                    <div class="col-md-3">
+                        <div style="float: right;">
+                            <button class="dropbtn" ng-click="place_order()">Place Order</button> 
+                        </div>                                    
+                    </div>
+                </div>                
+            </div>
+        </div>
+    </div>    
+
+    <div class="clearfix"></div>
+            
+    <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-6" ng-repeat="pizza in pizza_list">
+          <div class="box_outer">
+              <center>
+                    <img src="{{pizza.img_url}}" alt="{{pizza.pizza_name}}" align="middle" class="pizza_img">
+              </center>  
+              
+              <center><b class="red_text"> {{pizza.pizza_name}}</b></center>
+
+              <center> &#8377; {{pizza.price}}</center>
+           
+            <div class="check_pizza">
+
+                <input type="checkbox" value="{{pizza}}" id="list_{{$index}}" ng-click="add_to_order(pizza,$index)"> <span class="red_text">Add To Order</span>  
+
+                <div class="dropdown">
+                    <button class="dropbtn">See Ingredients</button>
+                    <div class="dropdown-content">
+                    <a ng-repeat="ing in pizza.ingredients">{{ing.ingre}}</a>
+                    </div>
+                </div>      
+            </div>
+          </div>
+        </div>    
+    </div>
+</div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Modal Header</h4>
+        </div>
+        <div class="modal-body">
+          <p>{{success_message}}</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>      
+    </div>
+  </div>
+
+<app-footer></app-footer>

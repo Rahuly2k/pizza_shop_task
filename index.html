@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html ng-app="pizzaApp">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Pizza Shop</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Raleway" />
+
+  </head>
+
+  <body>
+
+    <!-- Dynamic view -->
+
+        <div ng-view></div>
+   
+    <!-- angular and jquery library -->
+    <script src="library/jquery.min.js"></script>
+    <script src="library/angular.min.js"></script>
+    <script src="library/angular-route.min.js"></script>
+    <script src="library/bootstrap.bundle.min.js"></script>
+
+    <!-- route file -->
+
+    <script src="js/app.js"></script>
+
+    <!-- common directive -->
+
+    <script src="js/commonDirective.js"></script>
+
+    <!-- home module -->
+
+    <script src="modules/home/controller/homeController.js"></script>
+
+    <!-- shop module -->
+    
+    <script src="modules/order_pizza/controller/shopController.js"></script>
+    <script src="modules/order_pizza/service/shopService.js"></script>
+
+  </body>
+
+</html>

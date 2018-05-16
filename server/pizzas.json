@@ -1,0 +1,39 @@
+[
+    {
+        "id":"1",
+        "pizza_name":"Deluxe Veggie",
+        "price" : "225",
+        "img_url":"pizza_img/pizza_samples/Deluxe_Veggie.jpg",
+        "ingredients" : [
+            {"ingre":"Spinach"},
+            {"ingre":"Creamy Alfredo sauce"},
+            {"ingre":"Parmesan"},
+            {"ingre":"Asiago"}
+        ]
+    },
+    {
+        "id":"2",
+        "pizza_name":"Mexican Green Wave",
+        "price" : "350",
+        "img_url":"pizza_img/pizza_samples/Mexican_Green_Wave.jpg",        
+        "ingredients" : [
+            {"ingre":"Spinach"},
+            {"ingre":"Tomato Sauce"},
+            {"ingre":"mozzarella"},
+            {"ingre":"onions"}
+        ]
+    },
+    {
+        "id":"3",
+        "pizza_name":"Peppy Paneer",
+        "price" : "320",
+        "img_url":"pizza_img/pizza_samples/Peppy_Paneer.jpg",
+        "ingredients" : [
+            {"ingre":"mozzarella"},
+            {"ingre":"mushrooms"},
+            {"ingre":"black olives"},
+            {"ingre":"onions"}
+        ]
+    }
+]
+
