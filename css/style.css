@@ -129,3 +129,37 @@
 .dropdown:hover .dropbtn {
     background-color: #3e8e41;
 }
+
+.place_order_btn{
+    float: right;
+}
+
+/* On screens that are 992px or less, set the background color to blue */
+@media screen and (max-width: 992px) {
+    .box_outer {
+        width: 95%;
+        height: 275px;        
+    }
+    .dropdown {
+        float: left;
+    }
+}
+
+/* On screens that are 768px or less, set the background color to blue */
+@media screen and (max-width: 768px) {
+    
+    .place_order_btn{
+     margin-top: 5px;   
+    }
+    .box_outer {
+        margin-bottom: 25px;
+    }
+}
+
+/* On screens that are 576px or less, set the background color to blue */
+@media screen and (max-width: 576px) {
+
+    .dropdown {
+        float: right;
+    }
+}
