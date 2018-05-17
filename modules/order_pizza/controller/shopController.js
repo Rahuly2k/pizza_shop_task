@@ -82,7 +82,7 @@ shopModule.controller('shopController',['$scope','PizzaService',function($scope,
 
         if($scope.selected_order.ordered_pizza.length==0){
 
-            alert("Please select any item first");
+            alert("Please select your order first");
 
             return false;
         }
