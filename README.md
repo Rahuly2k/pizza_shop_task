@@ -8,8 +8,8 @@ Follow the simple steps to start the ptoject localy.
 
 ### Setup and instruction
 
-step 1 - Download project.
-step 2 - Extract the project and copy project folder to htdocs.
+* ** Download project.
+* ** - Extract the project and copy project folder to htdocs.
 step 3 - Open terminal in project folder.
 step 4 - Enter command "npm install".
 step 5 - Enter command "cd ./server" 
